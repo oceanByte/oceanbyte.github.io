@@ -7,25 +7,11 @@
       "targetCompletion": "2025-09-30",
       "currentProgress": 100,
       "priority": "high",
-      "keywords": [
-        "payment",
-        "eurau",
-        "e-money",
-        "real-time",
-        "transaction",
-        "financial",
-        "billing",
-        "consumer",
-        "provider",
-        "germany"
-      ],
       "successMetrics": [
         "Real-time payment processing operational",
         "EURAU e-money integration complete",
         "Consumer-to-provider transactions enabled"
-      ],
-      "owner": "Platform Team",
-      "stakeholders": ["Business", "Engineering", "Legal"]
+      ]
     },
     {
       "id": "q3q4-2025-fast-track-onboarding",
@@ -34,27 +20,12 @@
       "targetCompletion": "2025-12-31",
       "currentProgress": 65,
       "priority": "high",
-      "keywords": [
-        "onboarding",
-        "fast-track",
-        "participant",
-        "employee",
-        "registry",
-        "immutable",
-        "gaia-x",
-        "identity",
-        "decentralized",
-        "sovereign",
-        "deployment"
-      ],
       "successMetrics": [
         "Fast Track Application deployed",
         "Immutable registry v2 operational",
         "Gaia-X identity support enabled",
         "Sovereign deployment capability"
-      ],
-      "owner": "Product Team",
-      "stakeholders": ["Business", "Engineering", "UX"]
+      ]
     },
     {
       "id": "q3q4-2025-gaiax-loire",
@@ -63,27 +34,12 @@
       "targetCompletion": "2025-12-31",
       "currentProgress": 70,
       "priority": "high",
-      "keywords": [
-        "gaia-x",
-        "loire",
-        "credential",
-        "participant",
-        "identification",
-        "registry",
-        "standard",
-        "ssi",
-        "self-sovereign",
-        "oidc",
-        "compliance"
-      ],
       "successMetrics": [
         "Participant credentials issued",
         "Actor identification via registry operational",
         "De-facto standards compliance achieved",
         "SSI with OIDC preparation complete"
-      ],
-      "owner": "Infrastructure Team",
-      "stakeholders": ["Engineering", "Compliance", "Gaia-X"]
+      ]
     },
     {
       "id": "q3q4-2025-ocean-enterprise-rc1",
@@ -92,26 +48,12 @@
       "targetCompletion": "2025-12-31",
       "currentProgress": 60,
       "priority": "high",
-      "keywords": [
-        "ocean",
-        "enterprise",
-        "release",
-        "rc1",
-        "framework",
-        "upgrade",
-        "data-space",
-        "industry",
-        "testing",
-        "integration"
-      ],
       "successMetrics": [
         "RC1 release published",
         "Major framework upgrade completed",
         "Testing phase initiated",
         "Industry-grade integration support"
-      ],
-      "owner": "Engineering Team",
-      "stakeholders": ["Engineering", "Product", "QA"]
+      ]
     },
     {
       "id": "q3q4-2025-enterprise-participant-agent",
@@ -119,28 +61,14 @@
       "description": "Enable easy data space usage by organizations and employees without additional tools/wallets, with sovereign deployment support",
       "targetCompletion": "2025-12-31",
       "currentProgress": 55,
-      "priority": "high",
-      "keywords": [
-        "agent",
-        "participant",
-        "enterprise",
-        "organization",
-        "employee",
-        "wallet",
-        "sovereign",
-        "deployment",
-        "data-space",
-        "usage",
-        "simplified"
-      ],
+      "priority": "medium",
+
       "successMetrics": [
         "Enterprise agent deployed",
         "No additional tools/wallets required",
         "Organization and employee support",
         "Sovereign deployment enabled"
-      ],
-      "owner": "Product Team",
-      "stakeholders": ["Engineering", "Enterprise", "UX"]
+      ]
     },
     {
       "id": "2026-gaiax-ssi-integration",
@@ -149,28 +77,13 @@
       "targetCompletion": "2026-06-30",
       "currentProgress": 25,
       "priority": "high",
-      "keywords": [
-        "ssi",
-        "self-sovereign",
-        "identity",
-        "oidc4vp",
-        "credential",
-        "gaia-x",
-        "access-control",
-        "abac",
-        "attribute-based",
-        "policy",
-        "eudi",
-        "integration"
-      ],
+
       "successMetrics": [
         "SSI + OIDC4VP integration complete",
         "Gaia-X access controls operational",
         "Advanced ABAC implemented",
         "EUDI integration prepared"
-      ],
-      "owner": "Security Team",
-      "stakeholders": ["Engineering", "Compliance", "Gaia-X"]
+      ]
     },
     {
       "id": "2026-ocean-enterprise-live",
@@ -178,29 +91,13 @@
       "description": "Launch production-ready Ocean Enterprise Framework with cross-domain data space support, real-time payment, and Gaia-X de-facto standards",
       "targetCompletion": "2026-09-30",
       "currentProgress": 30,
-      "priority": "high",
-      "keywords": [
-        "ocean",
-        "enterprise",
-        "production",
-        "live",
-        "framework",
-        "data-space",
-        "cross-domain",
-        "payment",
-        "real-time",
-        "gaia-x",
-        "standard",
-        "launch"
-      ],
+      "priority": "medium",
       "successMetrics": [
         "Production deployment successful",
         "Cross-domain support operational",
         "Real-time payment integrated",
         "Gaia-X standards compliance"
-      ],
-      "owner": "Platform Team",
-      "stakeholders": ["Engineering", "Business", "Operations"]
+      ]
     },
     {
       "id": "2026-new-dataspace-initiatives",
@@ -209,27 +106,12 @@
       "targetCompletion": "2026-12-31",
       "currentProgress": 20,
       "priority": "medium",
-      "keywords": [
-        "dataspace",
-        "initiative",
-        "onboarding",
-        "users",
-        "community",
-        "ecosystem",
-        "x-ecosystem",
-        "economic",
-        "framework",
-        "growth",
-        "adoption"
-      ],
       "successMetrics": [
         "100+ new users onboarded",
         "Multiple data space initiatives launched",
         "Largest publicly available x-ecosystem",
         "Economic framework operational"
-      ],
-      "owner": "Business Development",
-      "stakeholders": ["Business", "Community", "Marketing"]
+      ]
     },
     {
       "id": "2026-compute-to-data-v2",
@@ -237,31 +119,13 @@
       "description": "Launch Compute-to-Data v2 with chained compute jobs, customized integrations, and advanced use case support on Ocean Enterprise foundation",
       "targetCompletion": "2026-12-31",
       "currentProgress": 15,
-      "priority": "high",
-      "keywords": [
-        "compute-to-data",
-        "c2d",
-        "compute",
-        "job",
-        "chained",
-        "integration",
-        "customized",
-        "advanced",
-        "use-case",
-        "ocean",
-        "enterprise",
-        "processing",
-        "ai",
-        "ml"
-      ],
+      "priority": "medium",
       "successMetrics": [
         "Chained compute jobs functional",
         "Customized integrations supported",
         "Advanced use cases enabled",
         "Ocean Enterprise foundation stable"
-      ],
-      "owner": "Engineering Team",
-      "stakeholders": ["Engineering", "Product", "Data Scientists"]
+      ]
     },
     {
       "id": "2026-eudi-eidas",
@@ -269,28 +133,13 @@
       "description": "Full integration with EUDIW (European Digital Identity Wallet) and ELbW (Business Wallet) aligned with European Digital Identity Standards and eIDAS 2.0",
       "targetCompletion": "2026-12-31",
       "currentProgress": 10,
-      "priority": "high",
-      "keywords": [
-        "eudi",
-        "eudiw",
-        "eidas",
-        "wallet",
-        "digital-identity",
-        "european",
-        "business-wallet",
-        "elbw",
-        "compliance",
-        "standard",
-        "integration"
-      ],
+      "priority": "medium",
       "successMetrics": [
         "EUDIW integration complete",
         "Business Wallet (ELbW) supported",
         "European Digital Identity Standards aligned",
         "eIDAS 2.0 compliance achieved"
-      ],
-      "owner": "Compliance Team",
-      "stakeholders": ["Engineering", "Legal", "Compliance"]
+      ]
     }
   ]
 }
