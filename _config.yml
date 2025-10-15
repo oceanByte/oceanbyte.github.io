@@ -1,0 +1,25 @@
+title: Pontus-X Changelog
+description: Stay current with Pontus-X progress, releases, and milestones.
+
+# Build settings
+markdown: kramdown
+permalink: /changelog/:title/
+
+# Collections
+collections:
+  changelog:
+    output: true
+    permalink: /changelog/:title/
+
+# Exclude from build
+exclude:
+  - README.md
+  - docs/
+  - _templates/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - package.json
+  - pnpm-lock.yaml
+  - .bundle/

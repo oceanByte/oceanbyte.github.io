@@ -1,0 +1,17 @@
+{
+  "name": "pontus-x-changelog-site",
+  "version": "1.0.0",
+  "description": "Pontus-X Changelog and Milestones Website",
+  "scripts": {
+    "dev": "bundle exec jekyll serve --livereload",
+    "build": "bundle exec jekyll build",
+    "clean": "bundle exec jekyll clean"
+  },
+  "keywords": [
+    "jekyll",
+    "changelog",
+    "pontus-x"
+  ],
+  "author": "Pontus-X Team",
+  "license": "MIT"
+}
