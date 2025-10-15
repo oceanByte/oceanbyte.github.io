@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Pontus-X Changelog and Milestones Website",
   "scripts": {
-    "dev": "bundle exec jekyll serve --livereload",
-    "build": "bundle exec jekyll build",
-    "clean": "bundle exec jekyll clean"
+    "predev": "BUNDLE_PATH=vendor/bundle BUNDLE_APP_CONFIG=.bundle bundle check || BUNDLE_PATH=vendor/bundle BUNDLE_APP_CONFIG=.bundle bundle install --path vendor/bundle",
+    "dev": "BUNDLE_PATH=vendor/bundle BUNDLE_APP_CONFIG=.bundle bundle exec jekyll serve --livereload",
+    "prebuild": "BUNDLE_PATH=vendor/bundle BUNDLE_APP_CONFIG=.bundle bundle check || BUNDLE_PATH=vendor/bundle BUNDLE_APP_CONFIG=.bundle bundle install --path vendor/bundle",
+    "build": "BUNDLE_PATH=vendor/bundle BUNDLE_APP_CONFIG=.bundle bundle exec jekyll build",
+    "preclean": "BUNDLE_PATH=vendor/bundle BUNDLE_APP_CONFIG=.bundle bundle check || BUNDLE_PATH=vendor/bundle BUNDLE_APP_CONFIG=.bundle bundle install --path vendor/bundle",
+    "clean": "BUNDLE_PATH=vendor/bundle BUNDLE_APP_CONFIG=.bundle bundle exec jekyll clean"
   },
   "keywords": [
     "jekyll",
