@@ -18,7 +18,7 @@
       "title": "Fast-Track Onboarding",
       "description": "Easy onboarding of participants and employees via Fast Track Application with immutable registry v2 supporting Gaia-X identities and decentralized onboarding",
       "targetCompletion": "2025-12-31",
-      "currentProgress": 65,
+      "currentProgress": 85,
       "priority": "high",
       "successMetrics": [
         "Fast Track Application deployed",
