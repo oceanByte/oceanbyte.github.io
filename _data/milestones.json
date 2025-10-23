@@ -6,7 +6,7 @@
       "description": "Enabling real-time payments between consumers and service providers with European e-money (EURAU) from Germany",
       "targetCompletion": "2025-09-30",
       "currentProgress": 100,
-      "priority": "high",
+      "status": "completed",
       "successMetrics": [
         "Real-time payment processing operational",
         "EURAU e-money integration complete",
@@ -17,9 +17,9 @@
       "id": "q3q4-2025-fast-track-onboarding",
       "title": "Fast-Track Onboarding",
       "description": "Easy onboarding of participants and employees via Fast Track Application with immutable registry v2 supporting Gaia-X identities and decentralized onboarding",
-      "targetCompletion": "2025-12-31",
-      "currentProgress": 85,
-      "priority": "high",
+      "targetCompletion": "2025-11-30",
+      "currentProgress": 80,
+      "status": "in progress",
       "successMetrics": [
         "Fast Track Application deployed",
         "Immutable registry v2 operational",
@@ -33,7 +33,7 @@
       "description": "Issue Gaia-X Loire Participant Credentials for all participants, enable actor identification via Pontus-X registry according to de-facto standards, prepare SSI with OIDC",
       "targetCompletion": "2025-12-31",
       "currentProgress": 70,
-      "priority": "high",
+      "status": "in progress",
       "successMetrics": [
         "Participant credentials issued",
         "Actor identification via registry operational",
@@ -47,7 +47,7 @@
       "description": "First Release Candidate of Ocean Enterprise with major framework upgrade for industry-grade data space integrations",
       "targetCompletion": "2025-12-31",
       "currentProgress": 60,
-      "priority": "high",
+      "status": "in progress",
       "successMetrics": [
         "RC1 release published",
         "Major framework upgrade completed",
@@ -61,8 +61,7 @@
       "description": "Enable easy data space usage by organizations and employees without additional tools/wallets, with sovereign deployment support",
       "targetCompletion": "2025-12-31",
       "currentProgress": 55,
-      "priority": "medium",
-
+      "status": "in progress",
       "successMetrics": [
         "Enterprise agent deployed",
         "No additional tools/wallets required",
@@ -76,8 +75,7 @@
       "description": "Integrate SSI with OIDC4VP standard for credential exchange, enable Gaia-X based access controls, advanced ABAC, and prepare for EUDI integration",
       "targetCompletion": "2026-06-30",
       "currentProgress": 25,
-      "priority": "high",
-
+      "status": "Upcoming",
       "successMetrics": [
         "SSI + OIDC4VP integration complete",
         "Gaia-X access controls operational",
@@ -91,7 +89,7 @@
       "description": "Launch production-ready Ocean Enterprise Framework with cross-domain data space support, real-time payment, and Gaia-X de-facto standards",
       "targetCompletion": "2026-09-30",
       "currentProgress": 30,
-      "priority": "medium",
+      "status": "Upcoming",
       "successMetrics": [
         "Production deployment successful",
         "Cross-domain support operational",
@@ -105,7 +103,7 @@
       "description": "Onboard new data space initiatives and 100+ users to the largest publicly available x-ecosystem with economic framework support",
       "targetCompletion": "2026-12-31",
       "currentProgress": 20,
-      "priority": "medium",
+      "status": "Upcoming",
       "successMetrics": [
         "100+ new users onboarded",
         "Multiple data space initiatives launched",
@@ -119,7 +117,7 @@
       "description": "Launch Compute-to-Data v2 with chained compute jobs, customized integrations, and advanced use case support on Ocean Enterprise foundation",
       "targetCompletion": "2026-12-31",
       "currentProgress": 15,
-      "priority": "medium",
+      "status": "Upcoming",
       "successMetrics": [
         "Chained compute jobs functional",
         "Customized integrations supported",
@@ -133,7 +131,7 @@
       "description": "Full integration with EUDIW (European Digital Identity Wallet) and ELbW (Business Wallet) aligned with European Digital Identity Standards and eIDAS 2.0",
       "targetCompletion": "2026-12-31",
       "currentProgress": 10,
-      "priority": "medium",
+      "status": "Upcoming",
       "successMetrics": [
         "EUDIW integration complete",
         "Business Wallet (ELbW) supported",

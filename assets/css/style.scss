@@ -400,6 +400,23 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.milestone-card-container {
+  perspective: 1000px;
+  min-height: 350px;
+}
+
+.milestone-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.milestone-card-container:hover .milestone-card-inner {
+  transform: rotateY(180deg);
+}
+
 .milestone-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -408,24 +425,28 @@ ul {
   display: grid;
   gap: 1.25rem;
   box-shadow: var(--shadow-sm);
-  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
-.milestone-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(37, 99, 235, 0.35);
-  box-shadow: 0 22px 44px -32px rgba(15, 23, 42, 0.55);
+.milestone-card-front {
+  z-index: 2;
 }
 
-.milestone-card.is-complete {
-  position: relative;
+.milestone-card-back {
+  transform: rotateY(180deg);
+}
+
+.milestone-card-container.is-complete .milestone-card {
   background: linear-gradient(135deg, rgba(240, 253, 244, 0.9) 0%, #ffffff 65%);
   border-color: rgba(34, 197, 94, 0.45);
   box-shadow: 0 26px 48px -30px rgba(22, 101, 52, 0.5);
-  padding-bottom: 2.5rem;
 }
 
-.milestone-card.is-complete::before {
+.milestone-card-container.is-complete .milestone-card::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -435,7 +456,7 @@ ul {
   mix-blend-mode: multiply;
 }
 
-.milestone-card.is-complete::after {
+.milestone-card-container.is-complete .milestone-card-front::after {
   content: '\2713';
   position: absolute;
   bottom: 18px;
@@ -451,11 +472,6 @@ ul {
   box-shadow: 0 10px 20px -12px rgba(21, 128, 61, 0.7);
   pointer-events: none;
   z-index: 1;
-}
-
-.milestone-card.is-complete:hover {
-  border-color: rgba(22, 163, 74, 0.6);
-  box-shadow: 0 32px 60px -28px rgba(21, 128, 61, 0.55);
 }
 
 .milestone-header {
@@ -479,33 +495,30 @@ ul {
   justify-content: flex-end;
 }
 
-.priority-badge {
-  text-transform: uppercase;
+.status-badge {
+  text-transform: capitalize;
   letter-spacing: 0.06em;
   font-size: 0.75rem;
   font-weight: 700;
   padding: 0.25rem 0.65rem;
   border-radius: 999px;
+  min-width: 100px;
+  text-align: center;
   color: var(--color-text);
   background: var(--color-accent-soft);
 }
 
-.milestone-card.priority-high .priority-badge {
-  color: #b91c1c;
-  background: #fee2e2;
+.milestone-card-container.status-Todo .status-badge {
+  color: #64748b;
+  background: #f1f5f9;
 }
 
-.milestone-card.priority-medium .priority-badge {
-  color: #92400e;
-  background: #fef3c7;
+.milestone-card-container.status-in-progress .status-badge {
+  color: #0369a1;
+  background: #dbeafe;
 }
 
-.milestone-card.priority-low .priority-badge {
-  color: #065f46;
-  background: #d1fae5;
-}
-
-.milestone-card.is-complete .priority-badge {
+.milestone-card-container.status-completed .status-badge {
   color: #166534;
   background: rgba(134, 239, 172, 0.5);
 }
@@ -542,11 +555,11 @@ ul {
   color: var(--color-text-muted);
 }
 
-.milestone-card.is-complete .progress-bar {
+.milestone-card-container.is-complete .progress-bar {
   background: linear-gradient(90deg, #22c55e, #16a34a);
 }
 
-.milestone-card.is-complete .progress-text {
+.milestone-card-container.is-complete .progress-text {
   color: #166534;
 }
 
@@ -559,6 +572,28 @@ ul {
 
 .milestone-meta strong {
   color: var(--color-text);
+}
+
+.milestone-success-metrics h4 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.milestone-success-metrics ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+}
+
+.milestone-success-metrics li {
+  margin-bottom: 0.5rem;
+}
+
+.milestone-success-metrics li:last-child {
+  margin-bottom: 0;
 }
 
 .no-content {
@@ -611,6 +646,10 @@ ul {
 
   .archive-entry {
     padding: 1.1rem 1.25rem;
+  }
+
+  .milestone-card-container {
+    min-height: 300px;
   }
 
   .milestone-card {
